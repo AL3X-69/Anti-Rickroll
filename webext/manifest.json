@@ -1,0 +1,30 @@
+{
+  "name": "Anti-Rickroll",
+  "version": "1.0",
+  "description": "Extension that open a little vent pop-up for you to espace a Rickroll situation.",
+  "manifest_version": 3,
+  "author": "GabHas",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Anti-Rickroll"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "app.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "clipboardRead"
+  ]
+}
