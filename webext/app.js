@@ -1,7 +1,7 @@
 const rickrollURL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 let alertMessage = "⚠ You are about to get Rickroll. ⚠\n\nExit ?"
 
-window.onload = function (){
+window.addEventListener("load", () => {
     console.log(window.location.href)
     if(window.location.href === rickrollURL){
         document.querySelectorAll('audio, video').forEach(item => {
@@ -20,4 +20,4 @@ window.onload = function (){
             });
         }
     }
-}
+});
